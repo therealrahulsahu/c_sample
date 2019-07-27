@@ -50,7 +50,7 @@ int main()
     //int data[n][3];
     int **data = (int **)malloc(n * sizeof(int *));
     for (int j = 0; j < n; ++j)
-    data[j] = (int *)malloc(3 * sizeof(int));
+        data[j] = (int *)malloc(3 * sizeof(int));
 
     for (int i=0;i<n;i++)
     {
