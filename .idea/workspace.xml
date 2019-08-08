@@ -12,9 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice_code/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/sam1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/sam2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/s&amp;s/cross.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice_code/add.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/practice_code/add.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +108,12 @@
       <workItem from="1564004743938" duration="477000" />
       <workItem from="1564005288525" duration="889000" />
       <workItem from="1564158517467" duration="7546000" />
-      <workItem from="1564507086059" duration="118000" />
+      <workItem from="1564507086059" duration="418000" />
+      <workItem from="1564766928726" duration="3687000" />
+      <workItem from="1564841700767" duration="6000" />
+      <workItem from="1564841794803" duration="2000" />
+      <workItem from="1565028101408" duration="18107000" />
+      <workItem from="1565206207251" duration="9775000" />
     </task>
     <task id="LOCAL-00001" summary="practice">
       <created>1564003450178</created>
@@ -128,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564253996783</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="practice">
+      <created>1564507220196</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564507220196</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

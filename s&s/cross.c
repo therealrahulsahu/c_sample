@@ -160,7 +160,7 @@ int min_cost_1000_m2(int n, int min, int *seq, int **data)
     {
         int val = cal_cost(n, seq, data);
         if(val<min)
-        min = val;
+            min = val;
         seq = mutate_2(n, seq);
     }
     return min;
@@ -445,7 +445,7 @@ int main()
 
     //find_cost_crossover_3_m3(n, seq1, seq2, data);
 
-    find_cost_crossover_3_m2(n, seq1, seq2, data);
+    //find_cost_crossover_3_m2(n, seq1, seq2, data);
 
     //find_cost_crossover_3_m2_m3(n, seq1, seq2, data);
 

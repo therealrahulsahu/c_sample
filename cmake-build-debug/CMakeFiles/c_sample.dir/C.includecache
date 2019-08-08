@@ -7,8 +7,8 @@
 #IncludeRegexTransform: 
 
 D:/Rahul Code/C Git/c_sample/main.c
-stdio.h
--
 stdlib.h
+-
+stdio.h
 -
 

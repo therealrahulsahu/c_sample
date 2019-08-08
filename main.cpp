@@ -1,12 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int rk(int a, int b=10)
+int main()
 {
-    return a + b;
-}
-int main() {
-    cout << "Hello, World!" << endl;
-    cout << rk(7);
-    return 0;
+    int n;
+    cout<<n;
 }
