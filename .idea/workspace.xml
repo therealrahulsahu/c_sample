@@ -12,15 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/a.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/sam1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/sam2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/s&amp;s/cross.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/print_n_scan/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/dayofweek.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/c_sample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/c_sample.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
@@ -68,9 +66,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Rahul Code\C Git\c_sample\practice_code\print_n_scan" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Rahul Code\C Git\c_sample" />
     </key>
@@ -113,7 +114,10 @@
       <workItem from="1564841700767" duration="6000" />
       <workItem from="1564841794803" duration="2000" />
       <workItem from="1565028101408" duration="18107000" />
-      <workItem from="1565206207251" duration="9775000" />
+      <workItem from="1565206207251" duration="10198000" />
+      <workItem from="1565284658878" duration="8121000" />
+      <workItem from="1565446639031" duration="1985000" />
+      <workItem from="1565530168494" duration="16625000" />
     </task>
     <task id="LOCAL-00001" summary="practice">
       <created>1564003450178</created>
@@ -150,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564507220196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="s&amp;s project submission">
+      <created>1565242970991</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565242970991</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +183,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="practice" />
-    <option name="LAST_COMMIT_MESSAGE" value="practice" />
+    <MESSAGE value="s&amp;s project submission" />
+    <option name="LAST_COMMIT_MESSAGE" value="s&amp;s project submission" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
