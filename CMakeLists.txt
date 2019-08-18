@@ -3,4 +3,4 @@ project(c_sample)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(c_sample main.c main.cpp)
+add_executable(c_sample s&s/cross.c)

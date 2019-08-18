@@ -122,59 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-main.obj: main.c.obj
+s&s/cross.obj: s&s/cross.c.obj
 
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.s
-.PHONY : main.c.s
-
-main.obj: main.cpp.obj
-
-.PHONY : main.obj
+.PHONY : s&s/cross.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+s&s/cross.c.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make "CMakeFiles/c_sample.dir/s&s/cross.c.obj"
+.PHONY : s&s/cross.c.obj
 
-main.i: main.cpp.i
+s&s/cross.i: s&s/cross.c.i
 
-.PHONY : main.i
+.PHONY : s&s/cross.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.i
-.PHONY : main.cpp.i
+s&s/cross.c.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make "CMakeFiles/c_sample.dir/s&s/cross.c.i"
+.PHONY : s&s/cross.c.i
 
-main.s: main.cpp.s
+s&s/cross.s: s&s/cross.c.s
 
-.PHONY : main.s
+.PHONY : s&s/cross.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.s
-.PHONY : main.cpp.s
+s&s/cross.c.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make "CMakeFiles/c_sample.dir/s&s/cross.c.s"
+.PHONY : s&s/cross.c.s
 
 # Help Target
 help:
@@ -185,12 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... s&s/cross.obj
+	@echo ... s&s/cross.i
+	@echo ... s&s/cross.s
 .PHONY : help
 
 

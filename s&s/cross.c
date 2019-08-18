@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 // To initialise array
 int *ini_arr(int n)
 {
@@ -10,6 +11,7 @@ int *ini_arr(int n)
     }
     return temp;
 }
+
 // To calculate cost of sequence
 int cal_cost(int n, int *seq, int **dist)
 {
@@ -93,6 +95,31 @@ int super_rand(int n)
     int temp1 = rand();
     int temp2 = rand();
     return (temp1*temp2)%n;
+}
+
+// To input array with random and distinct elements
+int *random_array(int n)
+{
+    int *temp = ini_arr(n);
+    for (int i = 0; i < n; ++i)
+    {
+        while (1)
+        {
+            int break_cond = 1;
+            temp[i]=rand()%n;
+            for (int j = 0; j < i; ++j)
+            {
+                if(temp[j] == temp[i])
+                {
+                    break_cond = 0;
+                    break;
+                }
+            }
+            if(break_cond)
+                break;
+        }
+    }
+    return temp;
 }
 
 // To swap any three No. of seq
@@ -304,7 +331,7 @@ void crossover_3(int n, int *p1, int *p2)
 // To calculate minimum cost over 1000 crossover by m3
 int min_cost_1000_crossover_m3(int n, int min, int *seq1, int *seq2, int **data)
 {
-    for (int i = 0; i < 100000; ++i)
+    for (int i = 0; i < 1000; ++i)
     {
         crossover_3(n, seq1, seq2);
         int cost1 = cal_cost(n, seq1, data);
@@ -341,10 +368,10 @@ void find_cost_crossover_3_m3(int n, int *seq1, int *seq2, int **data)
     }
 }
 
-// To calculate minimum cost over 1000 crossover by m3
+// To calculate minimum cost over 1000 crossover by m2
 int min_cost_1000_crossover_m2(int n, int min, int *seq1, int *seq2, int **data)
 {
-    for (int i = 0; i < 100000; ++i)
+    for (int i = 0; i < 1000; ++i)
     {
         crossover_3(n, seq1, seq2);
         int cost1 = cal_cost(n, seq1, data);
@@ -359,7 +386,7 @@ int min_cost_1000_crossover_m2(int n, int min, int *seq1, int *seq2, int **data)
     return min;
 }
 
-// find minimum cost by crossover of parts 3 by m3
+// find minimum cost by crossover of parts 3 by m2
 void find_cost_crossover_3_m2(int n, int *seq1, int *seq2, int **data)
 {
     int cost1 = cal_cost(n, seq1, data);
@@ -384,7 +411,7 @@ void find_cost_crossover_3_m2(int n, int *seq1, int *seq2, int **data)
 // To calculate minimum cost over 1000 crossover by m3 and m2
 int min_cost_1000_crossover_m2_m3(int n, int min, int *seq1, int *seq2, int **data)
 {
-    for (int i = 0; i < 100000; ++i)
+    for (int i = 0; i < 1000; ++i)
     {
         crossover_3(n, seq1, seq2);
         int cost1 = cal_cost(n, seq1, data);
@@ -423,21 +450,62 @@ void find_cost_crossover_3_m2_m3(int n, int *seq1, int *seq2, int **data)
     }
 }
 
+// crossover_3 with random array
+int crossover_with_random(int n, int *seq, int **data)
+{
+    int *temp = random_array(n);
+    crossover_3(n, seq, temp);
+    int min = cal_cost(n, seq, data);
+    int temp_cost = cal_cost(n, temp, data);
+    if(temp_cost<min)
+        min = temp_cost;
+    return min;
+}
 
+// crossover_3 with random array 1000 iteration
+int min_cost_1000_crossover_with_random(int n, int min, int *seq, int **data)
+{
+    for (int i = 0; i < 1000; ++i)
+    {
+        int temp = crossover_with_random(n, seq, data);
+        if(temp<min)
+            min = temp;
+    }
+    return min;
+}
+
+// min cost by crossover with random array
+void find_cost_crossover_with_randarray(int n, int *seq, int **data)
+{
+    int min = cal_cost(n, seq, data);
+    printf("%d\n", min);
+    while(1)
+    {
+        min = min_cost_1000_crossover_with_random(n, min, seq, data);
+        printf("%d\n", min);
+        char ch;
+        printf("Enter y to continue : ");
+        scanf(" %c", &ch);
+        if(ch=='y')
+            continue;
+        break;
+    }
+}
 int main()
 {
+    srand(time(0));
     int n = 10;
     // printf("Enter length of sequence (<10) : ");
     // scanf("%d", &n);
 
     int **data = input_mat(n);
 
-    int temp1[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    int temp2[] = {1, 3, 4, 2, 0, 6, 8, 5, 7, 9};
+    //int temp1[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    //int temp2[] = {1, 3, 4, 2, 0, 6, 8, 5, 7, 9};
     //int temp2[] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
-    int *seq1 = temp1;
-    int *seq2 = temp2;
+    int *seq1 = random_array(n);
+    // int *seq2 = random_array(n);
 
     //find_cost_m2(n, seq1, data);
 
@@ -445,9 +513,11 @@ int main()
 
     //find_cost_crossover_3_m3(n, seq1, seq2, data);
 
-    find_cost_crossover_3_m2(n, seq1, seq2, data);
+    //find_cost_crossover_3_m2(n, seq1, seq2, data);
 
     //find_cost_crossover_3_m2_m3(n, seq1, seq2, data);
+
+    find_cost_crossover_with_randarray(n, seq1, data);
 
     return 0;
 }
