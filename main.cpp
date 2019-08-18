@@ -2,5 +2,5 @@
 using namespace std;
 int main()
 {
-    cout<<-7%4;
+    cout<<"Rahul\n";
 }

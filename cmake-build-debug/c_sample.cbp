@@ -85,6 +85,9 @@
 		<Unit filename="D:/Rahul Code/C Git/c_sample/main.c">
 			<Option target="c_sample"/>
 		</Unit>
+		<Unit filename="D:/Rahul Code/C Git/c_sample/main.cpp">
+			<Option target="c_sample"/>
+		</Unit>
 		<Unit filename="D:/Rahul Code/C Git/c_sample/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
