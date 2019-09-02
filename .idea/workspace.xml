@@ -12,27 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/arithematic.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/bitwise/sam3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/function/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/function/sam1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/function/sam2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/function/sam3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/function/sam4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/function/sam5.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/sam1.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/sam2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/sam3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/sam4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/sam5.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/pointers/sam6.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice_code/print_n_scan/sam1.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/s&amp;s/cross.c" beforeDir="false" afterPath="$PROJECT_DIR$/s&amp;s/cross.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +140,9 @@
       <workItem from="1565446639031" duration="1985000" />
       <workItem from="1565530168494" duration="19066000" />
       <workItem from="1566118197796" duration="875000" />
-      <workItem from="1566160319571" duration="3196000" />
+      <workItem from="1566160319571" duration="3288000" />
+      <workItem from="1566309256821" duration="172000" />
+      <workItem from="1567355698808" duration="29155000" />
     </task>
     <task id="LOCAL-00001" summary="practice">
       <created>1564003450178</created>
@@ -194,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566118394854</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="s&amp;s edit and srand applies">
+      <created>1566163577328</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1566163577328</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +238,8 @@
     <MESSAGE value="practice" />
     <MESSAGE value="s&amp;s project submission" />
     <MESSAGE value="practice 18-8-19" />
-    <option name="LAST_COMMIT_MESSAGE" value="practice 18-8-19" />
+    <MESSAGE value="s&amp;s edit and srand applies" />
+    <option name="LAST_COMMIT_MESSAGE" value="s&amp;s edit and srand applies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

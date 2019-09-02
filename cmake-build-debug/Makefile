@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-s&s/cross.obj: s&s/cross.c.obj
+practice_code/bitwise/arithematic.obj: practice_code/bitwise/arithematic.c.obj
 
-.PHONY : s&s/cross.obj
+.PHONY : practice_code/bitwise/arithematic.obj
 
 # target to build an object file
-s&s/cross.c.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make "CMakeFiles/c_sample.dir/s&s/cross.c.obj"
-.PHONY : s&s/cross.c.obj
+practice_code/bitwise/arithematic.c.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj
+.PHONY : practice_code/bitwise/arithematic.c.obj
 
-s&s/cross.i: s&s/cross.c.i
+practice_code/bitwise/arithematic.i: practice_code/bitwise/arithematic.c.i
 
-.PHONY : s&s/cross.i
+.PHONY : practice_code/bitwise/arithematic.i
 
 # target to preprocess a source file
-s&s/cross.c.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make "CMakeFiles/c_sample.dir/s&s/cross.c.i"
-.PHONY : s&s/cross.c.i
+practice_code/bitwise/arithematic.c.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.i
+.PHONY : practice_code/bitwise/arithematic.c.i
 
-s&s/cross.s: s&s/cross.c.s
+practice_code/bitwise/arithematic.s: practice_code/bitwise/arithematic.c.s
 
-.PHONY : s&s/cross.s
+.PHONY : practice_code/bitwise/arithematic.s
 
 # target to generate assembly for a file
-s&s/cross.c.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make "CMakeFiles/c_sample.dir/s&s/cross.c.s"
-.PHONY : s&s/cross.c.s
+practice_code/bitwise/arithematic.c.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.s
+.PHONY : practice_code/bitwise/arithematic.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... s&s/cross.obj
-	@echo ... s&s/cross.i
-	@echo ... s&s/cross.s
+	@echo ... practice_code/bitwise/arithematic.obj
+	@echo ... practice_code/bitwise/arithematic.i
+	@echo ... practice_code/bitwise/arithematic.s
 .PHONY : help
 
 

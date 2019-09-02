@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Rahul Code/C Git/c_sample/s&amp;s/cross.c">
+		<Unit filename="D:/Rahul Code/C Git/c_sample/practice_code/bitwise/arithematic.c">
 			<Option target="c_sample"/>
 		</Unit>
 		<Unit filename="D:/Rahul Code/C Git/c_sample/CMakeLists.txt">

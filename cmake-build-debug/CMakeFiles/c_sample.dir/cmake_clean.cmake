@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c_sample.dir/s&s/cross.c.obj"
+  "CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj"
   "c_sample.pdb"
   "c_sample.exe"
   "c_sample.exe.manifest"
