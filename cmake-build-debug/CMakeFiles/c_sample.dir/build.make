@@ -33,10 +33,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.5728.100\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6262.62\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.5728.100\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6262.62\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -56,27 +56,27 @@ include CMakeFiles/c_sample.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/c_sample.dir/flags.make
 
-CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj: CMakeFiles/c_sample.dir/flags.make
-CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj: ../practice_code/bitwise/arithematic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\c_sample.dir\practice_code\bitwise\arithematic.c.obj   -c "D:\Rahul Code\C Git\c_sample\practice_code\bitwise\arithematic.c"
+CMakeFiles/c_sample.dir/main.c.obj: CMakeFiles/c_sample.dir/flags.make
+CMakeFiles/c_sample.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_sample.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\c_sample.dir\main.c.obj   -c "D:\Rahul Code\C Git\c_sample\main.c"
 
-CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Rahul Code\C Git\c_sample\practice_code\bitwise\arithematic.c" > CMakeFiles\c_sample.dir\practice_code\bitwise\arithematic.c.i
+CMakeFiles/c_sample.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_sample.dir/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Rahul Code\C Git\c_sample\main.c" > CMakeFiles\c_sample.dir\main.c.i
 
-CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Rahul Code\C Git\c_sample\practice_code\bitwise\arithematic.c" -o CMakeFiles\c_sample.dir\practice_code\bitwise\arithematic.c.s
+CMakeFiles/c_sample.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_sample.dir/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Rahul Code\C Git\c_sample\main.c" -o CMakeFiles\c_sample.dir\main.c.s
 
 # Object files for target c_sample
 c_sample_OBJECTS = \
-"CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj"
+"CMakeFiles/c_sample.dir/main.c.obj"
 
 # External object files for target c_sample
 c_sample_EXTERNAL_OBJECTS =
 
-c_sample.exe: CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj
+c_sample.exe: CMakeFiles/c_sample.dir/main.c.obj
 c_sample.exe: CMakeFiles/c_sample.dir/build.make
 c_sample.exe: CMakeFiles/c_sample.dir/linklibs.rsp
 c_sample.exe: CMakeFiles/c_sample.dir/objects1.rsp

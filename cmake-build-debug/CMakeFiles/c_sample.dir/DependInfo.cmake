@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Rahul Code/C Git/c_sample/practice_code/bitwise/arithematic.c" "D:/Rahul Code/C Git/c_sample/cmake-build-debug/CMakeFiles/c_sample.dir/practice_code/bitwise/arithematic.c.obj"
+  "D:/Rahul Code/C Git/c_sample/main.c" "D:/Rahul Code/C Git/c_sample/cmake-build-debug/CMakeFiles/c_sample.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
