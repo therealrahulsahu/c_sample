@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-main.obj: main.c.obj
+special/doc_struct.obj: special/doc_struct.c.obj
 
-.PHONY : main.obj
+.PHONY : special/doc_struct.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.obj
-.PHONY : main.c.obj
+special/doc_struct.c.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/doc_struct.c.obj
+.PHONY : special/doc_struct.c.obj
 
-main.i: main.c.i
+special/doc_struct.i: special/doc_struct.c.i
 
-.PHONY : main.i
+.PHONY : special/doc_struct.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.i
-.PHONY : main.c.i
+special/doc_struct.c.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/doc_struct.c.i
+.PHONY : special/doc_struct.c.i
 
-main.s: main.c.s
+special/doc_struct.s: special/doc_struct.c.s
 
-.PHONY : main.s
+.PHONY : special/doc_struct.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.s
-.PHONY : main.c.s
+special/doc_struct.c.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/doc_struct.c.s
+.PHONY : special/doc_struct.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... special/doc_struct.obj
+	@echo ... special/doc_struct.i
+	@echo ... special/doc_struct.s
 .PHONY : help
 
 

@@ -56,27 +56,27 @@ include CMakeFiles/c_sample.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/c_sample.dir/flags.make
 
-CMakeFiles/c_sample.dir/main.c.obj: CMakeFiles/c_sample.dir/flags.make
-CMakeFiles/c_sample.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_sample.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\c_sample.dir\main.c.obj   -c "D:\Rahul Code\C Git\c_sample\main.c"
+CMakeFiles/c_sample.dir/special/doc_struct.c.obj: CMakeFiles/c_sample.dir/flags.make
+CMakeFiles/c_sample.dir/special/doc_struct.c.obj: ../special/doc_struct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/c_sample.dir/special/doc_struct.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\c_sample.dir\special\doc_struct.c.obj   -c "D:\Rahul Code\C Git\c_sample\special\doc_struct.c"
 
-CMakeFiles/c_sample.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_sample.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Rahul Code\C Git\c_sample\main.c" > CMakeFiles\c_sample.dir\main.c.i
+CMakeFiles/c_sample.dir/special/doc_struct.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/c_sample.dir/special/doc_struct.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Rahul Code\C Git\c_sample\special\doc_struct.c" > CMakeFiles\c_sample.dir\special\doc_struct.c.i
 
-CMakeFiles/c_sample.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_sample.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Rahul Code\C Git\c_sample\main.c" -o CMakeFiles\c_sample.dir\main.c.s
+CMakeFiles/c_sample.dir/special/doc_struct.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/c_sample.dir/special/doc_struct.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Rahul Code\C Git\c_sample\special\doc_struct.c" -o CMakeFiles\c_sample.dir\special\doc_struct.c.s
 
 # Object files for target c_sample
 c_sample_OBJECTS = \
-"CMakeFiles/c_sample.dir/main.c.obj"
+"CMakeFiles/c_sample.dir/special/doc_struct.c.obj"
 
 # External object files for target c_sample
 c_sample_EXTERNAL_OBJECTS =
 
-c_sample.exe: CMakeFiles/c_sample.dir/main.c.obj
+c_sample.exe: CMakeFiles/c_sample.dir/special/doc_struct.c.obj
 c_sample.exe: CMakeFiles/c_sample.dir/build.make
 c_sample.exe: CMakeFiles/c_sample.dir/linklibs.rsp
 c_sample.exe: CMakeFiles/c_sample.dir/objects1.rsp
