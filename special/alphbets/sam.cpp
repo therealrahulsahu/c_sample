@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+#include"a.cpp"
+#include"b.cpp"
+#include"c.cpp"
+#include"d.cpp"
+#include"e.cpp"
+#include"f.cpp"
+#include"g.cpp"
+#include"h.cpp"
+#include"i.cpp"
+#include"j.cpp"
+#include"k.cpp"
+#include"l.cpp"
+#include"m.cpp"
+#include"n.cpp"
+#include"o.cpp"
+#include"p.cpp"
+#include"q.cpp"
+#include"r.cpp"
+#include"s.cpp"
+#include"t.cpp"
+#include"u.cpp"
+#include"v.cpp"
+#include"w.cpp"
+#include"x.cpp"
+#include"y.cpp"
+#include"z.cpp"
+
+
+main()
+{
+    //a();
+    //b();
+    //c();
+    //d();
+    //e();
+    //f();
+    //g();
+    //h();
+    //i();
+    //j();
+    //k();
+    //l();
+    //m();
+    //n();
+    //o();
+    //p();
+    q();
+    //r();
+    //s();
+    //t();
+    //u();
+    //v();
+    //w();
+    //x();
+    //y();
+    //z();
+
+}

@@ -11,10 +11,40 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/special/doc_struct.c" afterDir="false" />
+    <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="doc_struct 9 sep">
+      <change afterPath="$PROJECT_DIR$/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/a.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/all.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/b.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/c.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/d.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/e.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/f.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/g.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/h.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/i.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/j.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/k.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/l.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/m.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/n.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/o.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/p.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/q.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/r.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/s.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/sam.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/t.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/u.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/v.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/w.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/x.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/y.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/special/alphbets/z.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" afterDir="false" />
@@ -59,7 +89,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/special" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -125,7 +155,9 @@
       <workItem from="1566309256821" duration="172000" />
       <workItem from="1567355698808" duration="45586000" />
       <workItem from="1567689607917" duration="6639000" />
-      <workItem from="1567955991792" duration="834000" />
+      <workItem from="1567955991792" duration="1437000" />
+      <workItem from="1568205500039" duration="611000" />
+      <workItem from="1568296887168" duration="8087000" />
     </task>
     <task id="LOCAL-00001" summary="practice">
       <created>1564003450178</created>
@@ -211,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567705691029</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="doc_struct 9 sep">
+      <created>1567967599994</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1567967599994</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +277,8 @@
     <MESSAGE value="s&amp;s edit and srand applies" />
     <MESSAGE value="practice on 2 sep 2019" />
     <MESSAGE value="practice on 5 sep 2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="practice on 5 sep 2019" />
+    <MESSAGE value="doc_struct 9 sep" />
+    <option name="LAST_COMMIT_MESSAGE" value="doc_struct 9 sep" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
