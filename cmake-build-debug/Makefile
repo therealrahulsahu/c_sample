@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-main.obj: main.c.obj
+oslab/17sep.obj: oslab/17sep.c.obj
 
-.PHONY : main.obj
+.PHONY : oslab/17sep.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.obj
-.PHONY : main.c.obj
+oslab/17sep.c.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/oslab/17sep.c.obj
+.PHONY : oslab/17sep.c.obj
 
-main.i: main.c.i
+oslab/17sep.i: oslab/17sep.c.i
 
-.PHONY : main.i
+.PHONY : oslab/17sep.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.i
-.PHONY : main.c.i
+oslab/17sep.c.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/oslab/17sep.c.i
+.PHONY : oslab/17sep.c.i
 
-main.s: main.c.s
+oslab/17sep.s: oslab/17sep.c.s
 
-.PHONY : main.s
+.PHONY : oslab/17sep.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.s
-.PHONY : main.c.s
+oslab/17sep.c.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/oslab/17sep.c.s
+.PHONY : oslab/17sep.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... oslab/17sep.obj
+	@echo ... oslab/17sep.i
+	@echo ... oslab/17sep.s
 .PHONY : help
 
 
