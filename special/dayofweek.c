@@ -18,7 +18,7 @@ int main()
 {
     char *name[]={ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
     //int day = dayofweek(12, 8, 2019);
-    int day = dayofweek_modified(12, 8, 2019);
+    int day = dayofweek_modified(0, 1, 0);
     printf ("%s", name[day]);
     return 0;
 }

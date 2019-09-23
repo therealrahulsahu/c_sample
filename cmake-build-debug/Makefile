@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6262.62\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6603.37\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6262.62\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6603.37\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "D:\Rahul Code\C Git\c_sample\cmake-build-debug"
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6262.62\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6603.37\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6262.62\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\192.6603.37\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-oslab/17sep.obj: oslab/17sep.c.obj
+main.obj: main.cpp.obj
 
-.PHONY : oslab/17sep.obj
+.PHONY : main.obj
 
 # target to build an object file
-oslab/17sep.c.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/oslab/17sep.c.obj
-.PHONY : oslab/17sep.c.obj
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-oslab/17sep.i: oslab/17sep.c.i
+main.i: main.cpp.i
 
-.PHONY : oslab/17sep.i
+.PHONY : main.i
 
 # target to preprocess a source file
-oslab/17sep.c.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/oslab/17sep.c.i
-.PHONY : oslab/17sep.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-oslab/17sep.s: oslab/17sep.c.s
+main.s: main.cpp.s
 
-.PHONY : oslab/17sep.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-oslab/17sep.c.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/oslab/17sep.c.s
-.PHONY : oslab/17sep.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... oslab/17sep.obj
-	@echo ... oslab/17sep.i
-	@echo ... oslab/17sep.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

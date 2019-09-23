@@ -1,6 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 int main()
 {
-    printf("%c",'a');
+    char *st=calloc(10, sizeof(char));
+    scanf("%s",st);
+    printf("%s",st);
 }
