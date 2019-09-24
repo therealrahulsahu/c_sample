@@ -1,11 +1,22 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
+struct data
+{
+    int *arr;
+};
+typedef struct data data;
+void print(data dt)
+{
+    cout<<dt.arr[0]<<" "<<dt.arr[1]<<" "<<dt.arr[2]<<" ";
+}
 int main()
 {
-    char *st=(char *)calloc(10, sizeof(char));
-    cin>>st;
-    for (int i = 0; i < st[i] != '\0'; ++i)
-        st[i]^=32;
-    cout<<st;
+
+    data dt;
+    dt.arr=new int[3];
+    dt.arr[0]=1;
+    dt.arr[1]=2;
+    dt.arr[2]=3;
+    print(dt);
+
 }
