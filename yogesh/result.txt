@@ -1,0 +1,4 @@
+Geometric Mean : 245.78
+Arithmetic Mean : 294.38
+Median : 200.45
+Mode : 200.12

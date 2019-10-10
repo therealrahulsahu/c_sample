@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Rahul Code/C Git/c_sample/oslab/24sep.c
+D:/Rahul Code/C Git/c_sample/yogesh/Program.c
 stdio.h
+-
+math.h
+-
+stdlib.h
 -
 
