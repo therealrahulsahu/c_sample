@@ -24,7 +24,6 @@ int **sort(int, int **, int);
 int **FCFS(int, int **);
 int **SJF(int, int **);
 int **SRTN(int, int **);
-int **RR(int, int **, int);
 
 int main()
 {
@@ -34,17 +33,12 @@ int main()
     int **data = input_data(n);
     printf("\nEntered Seq :\n");
     output_data(n, data);
-    /*printf("\nFCFS :\n");
+    printf("\nFCFS :\n");
     output_data(n, FCFS(n, data));
     printf("\nSJF :\n");
     output_data(n, SJF(n,data));
     printf("\nSRTN :\n");
-    output_data(n, SRTN(n,data));*/
-    int time_q;
-    printf("Ente time quantum :");
-    scanf("%d", &time_q);
-    printf("\nRR :\n");
-    output_data(n, RR(n,data, time_q));
+    output_data(n, SRTN(n,data));
     free(data);
 }
 
@@ -315,45 +309,4 @@ int **SRTN(int n, int **original)
     }
     free(chart);
     return data;
-}
-int **RR(int n, int **original, int time_q)
-{
-    int **data = copy(n, original);
-    struct gt_node *chart = NULL;
-    struct gt_node *queue = NULL;
-    int gt = 0;
-    data = sort(n, data, AT);
-    int zeros=0;
-    for(int k=0;k<n;k++)
-    {
-        if(data[k][BT]==0)
-            zeros++;
-    }
-    while(1)
-    {
-        int i=0;
-        while (1)
-        {
-            if(gt<=data[i][AT])
-            {
-                queue = push(queue, data[i][PID], 0, 0);
-                i++;
-            }
-            else
-                break;
-        }
-        i=0;
-        int pop_id;
-        queue = pop(queue, &pop_id);
-        if(queue==-1)
-        {
-
-        } else
-        {
-
-        }
-        if(zeros==n)
-            break;
-    }
-
 }
