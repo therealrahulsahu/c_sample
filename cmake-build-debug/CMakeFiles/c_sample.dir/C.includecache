@@ -6,10 +6,8 @@
 
 #IncludeRegexTransform: 
 
-D:/Rahul Code/C Git/c_sample/yogesh/Program.c
+D:/Rahul Code/C Git/c_sample/main.c
 stdio.h
--
-math.h
 -
 stdlib.h
 -
