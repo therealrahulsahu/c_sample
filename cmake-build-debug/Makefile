@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-main.obj: main.cpp.obj
+cd_lab/14jan/p1.obj: cd_lab/14jan/p1.c.obj
 
-.PHONY : main.obj
+.PHONY : cd_lab/14jan/p1.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+cd_lab/14jan/p1.c.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cd_lab/14jan/p1.c.obj
+.PHONY : cd_lab/14jan/p1.c.obj
 
-main.i: main.cpp.i
+cd_lab/14jan/p1.i: cd_lab/14jan/p1.c.i
 
-.PHONY : main.i
+.PHONY : cd_lab/14jan/p1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.i
-.PHONY : main.cpp.i
+cd_lab/14jan/p1.c.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cd_lab/14jan/p1.c.i
+.PHONY : cd_lab/14jan/p1.c.i
 
-main.s: main.cpp.s
+cd_lab/14jan/p1.s: cd_lab/14jan/p1.c.s
 
-.PHONY : main.s
+.PHONY : cd_lab/14jan/p1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.s
-.PHONY : main.cpp.s
+cd_lab/14jan/p1.c.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cd_lab/14jan/p1.c.s
+.PHONY : cd_lab/14jan/p1.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... cd_lab/14jan/p1.obj
+	@echo ... cd_lab/14jan/p1.i
+	@echo ... cd_lab/14jan/p1.s
 .PHONY : help
 
 
