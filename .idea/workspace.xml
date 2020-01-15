@@ -12,32 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cd_lab/14jan/dfa_check.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cd_lab/14jan/geek.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cd_lab/14jan/p1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cd_lab/14jan/p2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cd_lab/14jan/p3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cd_lab/14jan/p4.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/linked_list.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/special/fixed_point_in_array.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cd_lab/10dec/dfa_check.c" beforeDir="false" afterPath="$PROJECT_DIR$/cd_lab/10dec/dfa_check.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +173,8 @@
       <workItem from="1578679159996" duration="13699000" />
       <workItem from="1578901879684" duration="632000" />
       <workItem from="1578970542970" duration="9088000" />
+      <workItem from="1579029939765" duration="89000" />
+      <workItem from="1579094402037" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="practice">
       <created>1564003450178</created>
@@ -351,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577366482388</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="For AB">
+      <created>1579029970331</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1579029970332</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,10 +390,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1578682812156" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1577366477591">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1579029966109">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1577366477591" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1579029966109" />
     <state width="1237" height="169" key="GridCell.Tab.0.bottom" timestamp="1578993986209">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -437,10 +430,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577905089353" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1577366486313">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1579029977294">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1577366486313" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1579029977294" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1577702412542">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
