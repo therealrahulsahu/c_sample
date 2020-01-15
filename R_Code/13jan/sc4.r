@@ -1,0 +1,9 @@
+#Q.4
+To_N<-function(n){
+  if(n<1){
+    return(0)
+  }else{
+    return(n+To_N(n-1))
+  }
+}
+print(To_N(10))
