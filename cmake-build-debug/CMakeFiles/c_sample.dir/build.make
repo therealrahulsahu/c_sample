@@ -56,27 +56,27 @@ include CMakeFiles/c_sample.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/c_sample.dir/flags.make
 
-CMakeFiles/c_sample.dir/main.cpp.obj: CMakeFiles/c_sample.dir/flags.make
-CMakeFiles/c_sample.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c_sample.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c_sample.dir\main.cpp.obj -c "D:\Rahul Code\C Git\c_sample\main.cpp"
+CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj: CMakeFiles/c_sample.dir/flags.make
+CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj: ../special/magic_sq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c_sample.dir\special\magic_sq.cpp.obj -c "D:\Rahul Code\C Git\c_sample\special\magic_sq.cpp"
 
-CMakeFiles/c_sample.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c_sample.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Rahul Code\C Git\c_sample\main.cpp" > CMakeFiles\c_sample.dir\main.cpp.i
+CMakeFiles/c_sample.dir/special/magic_sq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c_sample.dir/special/magic_sq.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Rahul Code\C Git\c_sample\special\magic_sq.cpp" > CMakeFiles\c_sample.dir\special\magic_sq.cpp.i
 
-CMakeFiles/c_sample.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c_sample.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Rahul Code\C Git\c_sample\main.cpp" -o CMakeFiles\c_sample.dir\main.cpp.s
+CMakeFiles/c_sample.dir/special/magic_sq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c_sample.dir/special/magic_sq.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Rahul Code\C Git\c_sample\special\magic_sq.cpp" -o CMakeFiles\c_sample.dir\special\magic_sq.cpp.s
 
 # Object files for target c_sample
 c_sample_OBJECTS = \
-"CMakeFiles/c_sample.dir/main.cpp.obj"
+"CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj"
 
 # External object files for target c_sample
 c_sample_EXTERNAL_OBJECTS =
 
-c_sample.exe: CMakeFiles/c_sample.dir/main.cpp.obj
+c_sample.exe: CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj
 c_sample.exe: CMakeFiles/c_sample.dir/build.make
 c_sample.exe: CMakeFiles/c_sample.dir/linklibs.rsp
 c_sample.exe: CMakeFiles/c_sample.dir/objects1.rsp

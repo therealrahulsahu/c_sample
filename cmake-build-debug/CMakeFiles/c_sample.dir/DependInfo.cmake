@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Rahul Code/C Git/c_sample/main.cpp" "D:/Rahul Code/C Git/c_sample/cmake-build-debug/CMakeFiles/c_sample.dir/main.cpp.obj"
+  "D:/Rahul Code/C Git/c_sample/special/magic_sq.cpp" "D:/Rahul Code/C Git/c_sample/cmake-build-debug/CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

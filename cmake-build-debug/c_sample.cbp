@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Rahul Code/C Git/c_sample/main.cpp">
+		<Unit filename="D:/Rahul Code/C Git/c_sample/special/magic_sq.cpp">
 			<Option target="c_sample"/>
 		</Unit>
 		<Unit filename="D:/Rahul Code/C Git/c_sample/CMakeLists.txt">

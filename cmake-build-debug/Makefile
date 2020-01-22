@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-main.obj: main.cpp.obj
+special/magic_sq.obj: special/magic_sq.cpp.obj
 
-.PHONY : main.obj
+.PHONY : special/magic_sq.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+special/magic_sq.cpp.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj
+.PHONY : special/magic_sq.cpp.obj
 
-main.i: main.cpp.i
+special/magic_sq.i: special/magic_sq.cpp.i
 
-.PHONY : main.i
+.PHONY : special/magic_sq.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.i
-.PHONY : main.cpp.i
+special/magic_sq.cpp.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/magic_sq.cpp.i
+.PHONY : special/magic_sq.cpp.i
 
-main.s: main.cpp.s
+special/magic_sq.s: special/magic_sq.cpp.s
 
-.PHONY : main.s
+.PHONY : special/magic_sq.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.cpp.s
-.PHONY : main.cpp.s
+special/magic_sq.cpp.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/magic_sq.cpp.s
+.PHONY : special/magic_sq.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... special/magic_sq.obj
+	@echo ... special/magic_sq.i
+	@echo ... special/magic_sq.s
 .PHONY : help
 
 

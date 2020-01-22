@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/c_sample.dir/main.cpp.obj"
+  "CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj"
   "c_sample.exe"
   "c_sample.exe.manifest"
   "c_sample.pdb"
