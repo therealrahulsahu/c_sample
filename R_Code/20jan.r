@@ -79,7 +79,6 @@ print(sort(v))}
 {
   v<-list(c(1,2,3,4), t(matrix(c(1:4), nrow = 2)), list(1, 1.7))
   k<-c(v, list(c(4,4)))
-  print(k)
   k[2]<-NULL
   print(k)
 }
@@ -138,6 +137,11 @@ print(sort(v))}
   for(i in 1:2){
     for(j in 1:2){
       x<-k[i,j]
+      if(!x){
+        break
+      }
+    }
+    if(!x){
       break
     }
   }
@@ -146,4 +150,32 @@ print(sort(v))}
   }else{
     print('Not')
   }
+}
+#Q.17
+{
+  m1<-matrix(1:9, nrow = 3, byrow = TRUE)
+  for(x in 1:length(m1[,1])){
+    print(sum(m1[x,]))
+  }
+}
+
+#Q.18
+{
+  m1<-array(1:27,dim=c(3,3,3))
+  print(m1[2,,3])
+}
+
+#Q.19
+{
+  m1<-array(1:27,dim=c(3,3,3))
+  for(i in 1:length(m1[1,1,])){
+    for(j in 1:length(m1[1,,i])){
+      print(sum(m1[j,,i]))
+    }
+  }
+}
+
+#Q.20
+{
+  
 }
