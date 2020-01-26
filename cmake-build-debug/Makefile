@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-special/magic_sq.obj: special/magic_sq.cpp.obj
+algorithm/sorting.obj: algorithm/sorting.cpp.obj
 
-.PHONY : special/magic_sq.obj
+.PHONY : algorithm/sorting.obj
 
 # target to build an object file
-special/magic_sq.cpp.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/magic_sq.cpp.obj
-.PHONY : special/magic_sq.cpp.obj
+algorithm/sorting.cpp.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/algorithm/sorting.cpp.obj
+.PHONY : algorithm/sorting.cpp.obj
 
-special/magic_sq.i: special/magic_sq.cpp.i
+algorithm/sorting.i: algorithm/sorting.cpp.i
 
-.PHONY : special/magic_sq.i
+.PHONY : algorithm/sorting.i
 
 # target to preprocess a source file
-special/magic_sq.cpp.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/magic_sq.cpp.i
-.PHONY : special/magic_sq.cpp.i
+algorithm/sorting.cpp.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/algorithm/sorting.cpp.i
+.PHONY : algorithm/sorting.cpp.i
 
-special/magic_sq.s: special/magic_sq.cpp.s
+algorithm/sorting.s: algorithm/sorting.cpp.s
 
-.PHONY : special/magic_sq.s
+.PHONY : algorithm/sorting.s
 
 # target to generate assembly for a file
-special/magic_sq.cpp.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/special/magic_sq.cpp.s
-.PHONY : special/magic_sq.cpp.s
+algorithm/sorting.cpp.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/algorithm/sorting.cpp.s
+.PHONY : algorithm/sorting.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... special/magic_sq.obj
-	@echo ... special/magic_sq.i
-	@echo ... special/magic_sq.s
+	@echo ... algorithm/sorting.obj
+	@echo ... algorithm/sorting.i
+	@echo ... algorithm/sorting.s
 .PHONY : help
 
 
