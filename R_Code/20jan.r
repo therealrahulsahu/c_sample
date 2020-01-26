@@ -191,3 +191,9 @@ print(sort(v))}
   mat<-diag(c(v1, v2))
   print(mat)
 }
+
+#Q.22
+{
+  v1<-wilkinson(7)
+  print(v1)
+}
