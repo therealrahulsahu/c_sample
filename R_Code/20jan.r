@@ -177,5 +177,17 @@ print(sort(v))}
 
 #Q.20
 {
-  
+  v<-vector('character', 20)
+  for(i in 1:20){
+    v[i]<-tolower(as.character(as.roman(i*(i+1)/2)))
+  }
+  print(v)
+}
+
+#Q.21
+{
+  v1<-c(10:0)
+  v2<-c(1:10)
+  mat<-diag(c(v1, v2))
+  print(mat)
 }
