@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
 #define F0 2
 #define F1 3
 #define TY 0
@@ -59,7 +58,7 @@ char *in_str()
 	}
 	return str;
 }
-int check_dfa(char *st, int **dfa, int state)
+int check_dfa(const char *st, int **dfa, int state)
 {
 	int final = 0;
 	for(int i=0;st[i];i++)
@@ -113,7 +112,7 @@ int main()
 	
 	int **dfa = in_dfa(n);
 	
-	out_dfa(dfa, n, start)	;
+	//out_dfa(dfa, n, start)	;
 		
 	while(1)
 	{

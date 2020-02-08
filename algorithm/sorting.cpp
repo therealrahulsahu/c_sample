@@ -129,9 +129,9 @@ void merge_sort(int *data, int l, int r)
 }
 int partition (int *data, int low, int high)
 {
-    int pivot =data[high];
+    int pivot = data[high];
     int i = (low - 1);
-    for (int j = low; j <= high - 1; j++)
+    for (int j = low; j < high; j++)
     {
         if (data[j] < pivot)
         {

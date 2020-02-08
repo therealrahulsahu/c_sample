@@ -27,7 +27,7 @@ int main(){
 			printf("Files Are Equal\n");
 		else
 			printf("Files Are Not Equal\n");
-		close(file1);
-		close(file2);
+		fclose(file1);
+		fclose(file2);
 	}
 }

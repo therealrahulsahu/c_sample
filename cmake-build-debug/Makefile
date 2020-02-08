@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-algorithm/sorting.obj: algorithm/sorting.cpp.obj
+main.obj: main.c.obj
 
-.PHONY : algorithm/sorting.obj
+.PHONY : main.obj
 
 # target to build an object file
-algorithm/sorting.cpp.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/algorithm/sorting.cpp.obj
-.PHONY : algorithm/sorting.cpp.obj
+main.c.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.obj
+.PHONY : main.c.obj
 
-algorithm/sorting.i: algorithm/sorting.cpp.i
+main.i: main.c.i
 
-.PHONY : algorithm/sorting.i
+.PHONY : main.i
 
 # target to preprocess a source file
-algorithm/sorting.cpp.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/algorithm/sorting.cpp.i
-.PHONY : algorithm/sorting.cpp.i
+main.c.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.i
+.PHONY : main.c.i
 
-algorithm/sorting.s: algorithm/sorting.cpp.s
+main.s: main.c.s
 
-.PHONY : algorithm/sorting.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-algorithm/sorting.cpp.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/algorithm/sorting.cpp.s
-.PHONY : algorithm/sorting.cpp.s
+main.c.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... algorithm/sorting.obj
-	@echo ... algorithm/sorting.i
-	@echo ... algorithm/sorting.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
