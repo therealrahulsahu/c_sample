@@ -12,13 +12,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af6cecf9-fc24-4758-b399-bd231173fc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/R_Code/.RData" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/R_Code/.Rhistory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/11feb/p1.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/11feb/p2.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/11feb/p3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/11feb/p4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/lex.yy.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/p1.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/p2.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/p3.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/p4.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/p5.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/result_5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cd_lab/4feb/rk.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cg_lab/6feb/p1.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/sorting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/sorting.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cd_lab/10dec/dfa_check.c" beforeDir="false" afterPath="$PROJECT_DIR$/cd_lab/10dec/dfa_check.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cd_lab/21jan/p2.c" beforeDir="false" afterPath="$PROJECT_DIR$/cd_lab/21jan/p2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_Code/27jan.r" beforeDir="false" afterPath="$PROJECT_DIR$/R_Code/27jan.r" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R_Code/3feb.r" beforeDir="false" afterPath="$PROJECT_DIR$/R_Code/3feb.r" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cd_lab/p1.l" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cd_lab/p2.l" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cd_lab/p3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cd_lab/p4.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/cmake_clean.cmake" afterDir="false" />
@@ -30,8 +49,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/c_sample.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/c_sample.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +92,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cd_lab/14jan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cd_lab" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,20 +102,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Rahul Code\C Git\c_sample\practice_code\linked_l" />
-      <recent name="D:\Rahul Code\C Git\c_sample\graph" />
-      <recent name="D:\Rahul Code\C Git\c_sample\practice_code\print_n_scan" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rahul Code\C Git\c_sample\cd_lab" />
       <recent name="D:\Rahul Code\C Git\c_sample\cd_lab\14jan" />
       <recent name="D:\Rahul Code\C Git\c_sample\cd_lab\10dec" />
       <recent name="D:\Rahul Code\C Git\c_sample\oslab" />
       <recent name="D:\Rahul Code\C Git\c_sample\special" />
-      <recent name="D:\Rahul Code\C Git\c_sample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Rahul Code\C Git\c_sample\cg_lab\p1.c" />
+      <recent name="D:\Rahul Code\C Git\c_sample\cd_lab\11feb" />
+      <recent name="D:\Rahul Code\C Git\c_sample\practice_code\linked_l" />
+      <recent name="D:\Rahul Code\C Git\c_sample\graph" />
+      <recent name="D:\Rahul Code\C Git\c_sample\practice_code\print_n_scan" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -194,7 +214,11 @@
       <workItem from="1580395937521" duration="340000" />
       <workItem from="1580758252841" duration="4082000" />
       <workItem from="1581055802251" duration="979000" />
-      <workItem from="1581150198029" duration="391000" />
+      <workItem from="1581150198029" duration="454000" />
+      <workItem from="1581452380764" duration="4706000" />
+      <workItem from="1581460601261" duration="3475000" />
+      <workItem from="1581519540666" duration="341000" />
+      <workItem from="1581955492881" duration="6178000" />
     </task>
     <task id="LOCAL-00001" summary="practice">
       <created>1564003450178</created>
@@ -434,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580072472174</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="LAB6">
+      <created>1581150631857</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1581150631857</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +504,8 @@
     <MESSAGE value="CD LAB @21 Jan" />
     <MESSAGE value="AP LAB-4" />
     <MESSAGE value="AP LAB-5 Template" />
-    <option name="LAST_COMMIT_MESSAGE" value="AP LAB-5 Template" />
+    <MESSAGE value="LAB6" />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="375" y="144" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577703617882">
@@ -484,26 +516,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1578682812156" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1580072471296">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1581963795556">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1580072471296" />
-    <state width="1237" height="129" key="GridCell.Tab.0.bottom" timestamp="1580396247637">
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1581963795556" />
+    <state width="1237" height="129" key="GridCell.Tab.0.bottom" timestamp="1581458827009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580396247637" />
-    <state width="1237" height="129" key="GridCell.Tab.0.center" timestamp="1580396247637">
+    <state width="1237" height="129" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581458827009" />
+    <state width="1237" height="129" key="GridCell.Tab.0.center" timestamp="1581458827009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580396247637" />
-    <state width="1237" height="129" key="GridCell.Tab.0.left" timestamp="1580396247636">
+    <state width="1237" height="129" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581458827009" />
+    <state width="1237" height="129" key="GridCell.Tab.0.left" timestamp="1581458827009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580396247636" />
-    <state width="1237" height="129" key="GridCell.Tab.0.right" timestamp="1580396247637">
+    <state width="1237" height="129" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581458827009" />
+    <state width="1237" height="129" key="GridCell.Tab.0.right" timestamp="1581458827009">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="129" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580396247637" />
+    <state width="1237" height="129" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581458827009" />
     <state width="1237" height="169" key="GridCell.Tab.1.bottom" timestamp="1580072489386">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -520,18 +552,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="169" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1580072489385" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1577905089353">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1581510124735">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577905089353" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1580072480854">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581510124735" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1581150636695">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1580072480854" />
-    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581150589175">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1581150636695" />
+    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581955513121">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1581150589175" />
+    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1581955513121" />
     <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1580759763230">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

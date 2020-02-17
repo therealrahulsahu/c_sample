@@ -1,0 +1,8 @@
+India, officially the Republic of India, is country in sounth Asia.
+It is a the seventh-largest country by area, the second most populus country, and the most populus democracy in the world.
+Boeing-747 with capacity of 900.
+Type castted 157.567 is 157.
+// Total Population of world is 7 Billion.
+/* In India 1.3 Billion
+and 1.45 Billion in China.
+*/

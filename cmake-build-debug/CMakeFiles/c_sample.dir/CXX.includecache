@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Rahul Code/C Git/c_sample/algorithm/sorting.cpp
+D:/Rahul Code/C Git/c_sample/cg_lab/6feb/p1.cpp
 iostream
+-
+graphics.h
+-
+string
 -
 

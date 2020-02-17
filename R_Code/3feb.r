@@ -1,5 +1,9 @@
 #5
 {
+  {
+    data(cars)
+    summary(cars)
+  }
   #titanic
   {
     data(Titanic)
@@ -51,18 +55,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 #Explore a built-in dataset
 {
   data(cars)
@@ -98,13 +90,16 @@
   }
   #Scatter Plot
   {
+    data("mtcars")
     attach(mtcars)
-    plot(wt, mpg, main="Scatter Plot",xlab="Car Weight ", ylab="Miles Per Gallon ",pch=19)
+    plot(wt, mpg, main="Scatter-Plot",xlab="Car Weight ", ylab="Miles Per Gallon ",pch=19)
   }
   #Kernel Density Plot
   {
+    short<-mtcars$mpg
+    summary(short)
     den = density(mtcars$mpg)
-    plot(den,main=" Kernel Density of Miles Per Gallon")
+    plot(den,main=" Kernel Density of Miles Per Gallon", xlab="Element", ylab = "Dense")
     polygon(den, col="red", border="blue")
   }
 }
@@ -117,8 +112,7 @@
 #Draw a Bubble Chart using ggplot2 Package
 {
   library(ggplot2)
-  theme_set(theme_bw() + theme(legend.position = "top")
-  )
+  theme_set(theme_bw() + theme(legend.position = "top"))
   # Load data
   data("mtcars")
   df <- mtcars
@@ -130,3 +124,4 @@
   head(df[, c("wt", "mpg", "cyl", "qsec")], 4)
   ggplot(df, aes(x = wt, y = mpg)) + geom_point(aes(color = cyl, size = qsec), alpha = 0.5) + scale_color_manual(values = c("#00AFBB", "#E7B800", "#FC4E07")) + scale_size(range = c(0.5, 12))  # Adjust the range of points size
 }
+

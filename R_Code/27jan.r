@@ -39,7 +39,7 @@
 
 #program4
 {
-  x <- data.frame("roll"=c(1705417,1705420,1705421,1705422,""), "Name" = c("mohak","neerad","nkg","payel","ss"), "department"= c("CSE","CSE","CSE","IT","IT"), "course"=c("btech","btech","btech","btech","btech"),"yoj"=c(2016,2018,2017,2017,2018) )
+  x <- data.frame("roll"=c(1705157,1705159,1705141,1705161), "Name" = c("Rahul","Saloni","Justin","Tewary"), "department"= c("CSE","CSE","CSE","CSE"), "course"=c("btech","btech","btech","btech"),"yoj"=c(2017,2017,2017,2017))
   print(x)
   subset(x, subset = yoj == 2018)
   subset(x, subset = roll != "")
@@ -48,8 +48,7 @@
 
 #program5
 {
-  x=c("m","o","h","a","k")
-  # t=nchar(x)
+  x=c("r","a","h","u","l","s","a","h","u")
   s<-0
   for(i in x){
     
@@ -76,7 +75,8 @@
 }
 
 #program8
-{pos<-regexpr("ext","extraction")
+{
+ pos<-regexpr("ext","extraction")
  print(pos)   
  gsub("ext","tst","extraction") 
 }
@@ -90,22 +90,24 @@
 }
 
 #program10
-{install.packages('bizdays')
+{
+  install.packages('bizdays')
   create.calendar(name, holidays = integer(0), weekdays = NULL, start.date = NULL, end.date = NULL, adjust.from = adjust.none,adjust.to = adjust.none, financial = TRUE)
 }
 
 #program11
-{ f<-c("single", "married", "married", "single")
+{ 
+  f<-c("single", "married", "married", "single")
   is.factor(f)
-  f<-factor(c("single", "married", "married", "single"), levels = c("single","married", "divorced"));
+  f<-factor(c("single", "married", "married", "single"), levels = c("single","married", "divorced"))
   print(f)
 }
 
 #program12
 {
-  x <- factor(c("mohak", "neerad", "nkg", "payel","harsh","pritam","piyush","rachit","sa","xyz"));
+  x <- factor(c("mohak", "neerad", "nkg"))
   print(x)
-  x <- factor(c("mohak", "neerad", "nkg", "payel","harsh","pritam","piyush","rachit","sa","xyz"), levels = c("mohak","neerad", "payel","pritam","nkg","harsh"));
+  x <- factor(c("mohak", "neerad", "nkg", "Rahul"), levels = c("Rahul","nkg", "payel","pritam","nkg","harsh"));
   print(x)
 }
 

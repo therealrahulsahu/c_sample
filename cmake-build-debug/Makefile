@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-main.obj: main.c.obj
+cg_lab/6feb/p1.obj: cg_lab/6feb/p1.cpp.obj
 
-.PHONY : main.obj
+.PHONY : cg_lab/6feb/p1.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.obj
-.PHONY : main.c.obj
+cg_lab/6feb/p1.cpp.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj
+.PHONY : cg_lab/6feb/p1.cpp.obj
 
-main.i: main.c.i
+cg_lab/6feb/p1.i: cg_lab/6feb/p1.cpp.i
 
-.PHONY : main.i
+.PHONY : cg_lab/6feb/p1.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.i
-.PHONY : main.c.i
+cg_lab/6feb/p1.cpp.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.i
+.PHONY : cg_lab/6feb/p1.cpp.i
 
-main.s: main.c.s
+cg_lab/6feb/p1.s: cg_lab/6feb/p1.cpp.s
 
-.PHONY : main.s
+.PHONY : cg_lab/6feb/p1.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/main.c.s
-.PHONY : main.c.s
+cg_lab/6feb/p1.cpp.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.s
+.PHONY : cg_lab/6feb/p1.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... cg_lab/6feb/p1.obj
+	@echo ... cg_lab/6feb/p1.i
+	@echo ... cg_lab/6feb/p1.s
 .PHONY : help
 
 
