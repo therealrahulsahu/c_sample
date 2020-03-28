@@ -65,7 +65,6 @@
   rev_order = nchar("xyz"):1
   reversed_chars = string_split[[1]][rev_order]
   paste(reversed_chars, collapse = "")
- 
 }
 
 #program7

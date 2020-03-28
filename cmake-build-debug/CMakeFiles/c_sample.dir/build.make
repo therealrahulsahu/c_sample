@@ -33,10 +33,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -56,27 +56,27 @@ include CMakeFiles/c_sample.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/c_sample.dir/flags.make
 
-CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj: CMakeFiles/c_sample.dir/flags.make
-CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj: ../cg_lab/6feb/p1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c_sample.dir\cg_lab\6feb\p1.cpp.obj -c "D:\Rahul Code\C Git\c_sample\cg_lab\6feb\p1.cpp"
+CMakeFiles/c_sample.dir/graph/graph.cpp.obj: CMakeFiles/c_sample.dir/flags.make
+CMakeFiles/c_sample.dir/graph/graph.cpp.obj: ../graph/graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Rahul Code\C Git\c_sample\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/c_sample.dir/graph/graph.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\c_sample.dir\graph\graph.cpp.obj -c "D:\Rahul Code\C Git\c_sample\graph\graph.cpp"
 
-CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Rahul Code\C Git\c_sample\cg_lab\6feb\p1.cpp" > CMakeFiles\c_sample.dir\cg_lab\6feb\p1.cpp.i
+CMakeFiles/c_sample.dir/graph/graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/c_sample.dir/graph/graph.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Rahul Code\C Git\c_sample\graph\graph.cpp" > CMakeFiles\c_sample.dir\graph\graph.cpp.i
 
-CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Rahul Code\C Git\c_sample\cg_lab\6feb\p1.cpp" -o CMakeFiles\c_sample.dir\cg_lab\6feb\p1.cpp.s
+CMakeFiles/c_sample.dir/graph/graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/c_sample.dir/graph/graph.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Rahul Code\C Git\c_sample\graph\graph.cpp" -o CMakeFiles\c_sample.dir\graph\graph.cpp.s
 
 # Object files for target c_sample
 c_sample_OBJECTS = \
-"CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj"
+"CMakeFiles/c_sample.dir/graph/graph.cpp.obj"
 
 # External object files for target c_sample
 c_sample_EXTERNAL_OBJECTS =
 
-c_sample.exe: CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj
+c_sample.exe: CMakeFiles/c_sample.dir/graph/graph.cpp.obj
 c_sample.exe: CMakeFiles/c_sample.dir/build.make
 c_sample.exe: CMakeFiles/c_sample.dir/linklibs.rsp
 c_sample.exe: CMakeFiles/c_sample.dir/objects1.rsp

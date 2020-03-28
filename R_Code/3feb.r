@@ -124,4 +124,3 @@
   head(df[, c("wt", "mpg", "cyl", "qsec")], 4)
   ggplot(df, aes(x = wt, y = mpg)) + geom_point(aes(color = cyl, size = qsec), alpha = 0.5) + scale_color_manual(values = c("#00AFBB", "#E7B800", "#FC4E07")) + scale_size(range = c(0.5, 12))  # Adjust the range of points size
 }
-

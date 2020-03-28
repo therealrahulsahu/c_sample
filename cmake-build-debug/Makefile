@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -E remove -f
+RM = C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "D:\Rahul Code\C Git\c_sample\cmake-build-debug"
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5662.56\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\KIIT\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.6494.38\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,32 +122,32 @@ c_sample/fast:
 	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/build
 .PHONY : c_sample/fast
 
-cg_lab/6feb/p1.obj: cg_lab/6feb/p1.cpp.obj
+graph/graph.obj: graph/graph.cpp.obj
 
-.PHONY : cg_lab/6feb/p1.obj
+.PHONY : graph/graph.obj
 
 # target to build an object file
-cg_lab/6feb/p1.cpp.obj:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.obj
-.PHONY : cg_lab/6feb/p1.cpp.obj
+graph/graph.cpp.obj:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/graph/graph.cpp.obj
+.PHONY : graph/graph.cpp.obj
 
-cg_lab/6feb/p1.i: cg_lab/6feb/p1.cpp.i
+graph/graph.i: graph/graph.cpp.i
 
-.PHONY : cg_lab/6feb/p1.i
+.PHONY : graph/graph.i
 
 # target to preprocess a source file
-cg_lab/6feb/p1.cpp.i:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.i
-.PHONY : cg_lab/6feb/p1.cpp.i
+graph/graph.cpp.i:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/graph/graph.cpp.i
+.PHONY : graph/graph.cpp.i
 
-cg_lab/6feb/p1.s: cg_lab/6feb/p1.cpp.s
+graph/graph.s: graph/graph.cpp.s
 
-.PHONY : cg_lab/6feb/p1.s
+.PHONY : graph/graph.s
 
 # target to generate assembly for a file
-cg_lab/6feb/p1.cpp.s:
-	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/cg_lab/6feb/p1.cpp.s
-.PHONY : cg_lab/6feb/p1.cpp.s
+graph/graph.cpp.s:
+	$(MAKE) -f CMakeFiles\c_sample.dir\build.make CMakeFiles/c_sample.dir/graph/graph.cpp.s
+.PHONY : graph/graph.cpp.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... c_sample
 	@echo ... edit_cache
-	@echo ... cg_lab/6feb/p1.obj
-	@echo ... cg_lab/6feb/p1.i
-	@echo ... cg_lab/6feb/p1.s
+	@echo ... graph/graph.obj
+	@echo ... graph/graph.i
+	@echo ... graph/graph.s
 .PHONY : help
 
 
