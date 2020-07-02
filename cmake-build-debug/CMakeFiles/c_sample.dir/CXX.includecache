@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/Rahul Code/C Git/c_sample/graph/graph.cpp
+D:/Rahul Code/C Git/c_sample/main.cpp
 iostream
 -
-utility
--
-stack
--
-queue
+cmath
 -
 

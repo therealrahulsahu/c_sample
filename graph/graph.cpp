@@ -3,7 +3,7 @@
 #include <stack>
 #include <queue>
 using namespace std;
-class Graph
+class DGraph
 {
 public:
     class Error: public exception{
@@ -36,6 +36,10 @@ public:
     public:
         explicit PathNotFound(string msg=""):Error(move(msg)){}
     };
+    class NegativeWeightCycleExists: public Error{
+    public:
+        explicit NegativeWeightCycleExists(string msg=""):Error(move(msg)){}
+    };
 private:
     struct Edge;
     struct Vertices{
@@ -53,7 +57,7 @@ private:
     };
     typedef struct Vertices Vertices;
     typedef struct Edge Edge;
-    int no_nodes;
+    int no_vertices, curr_vertices, no_edges;
     Vertices **v_list = nullptr;
     static Edge *add_node_in_end(Edge *head, int weight, Vertices *addr){
         Edge *node = new Edge(weight, addr);
@@ -73,13 +77,13 @@ private:
         }
         return head;
     }
-    static void delete_edge_list(Edge *head){
-        if(head == nullptr){
-            return;
-        }else if(head->next == nullptr){
-            delete head;
-        }else{
-            delete_edge_list(head->next);
+    void delete_edge_list(Edge *head){
+        Edge *current = head;
+        while (current != nullptr){
+            Edge *next = current->next;
+            delete current;
+            current = next;
+            no_edges--;
         }
     }
     static int false_min_node(int const *data, bool const *visit, int n){
@@ -93,20 +97,73 @@ private:
         }
         return min_ind;
     }
+    void check_valid_vertices(int start){
+        if( start < 0 || start >= no_vertices){
+            throw VerticesNotExists("Vertices should in between (1," + to_string(no_vertices) + ")");
+        }
+        if(v_list[start] == nullptr){
+            throw VerticesNotExists("Vertices : " + to_string(start) + " doesn't exists");
+        }
+    }
+    void check_valid_vertices(int start, int end){
+        if( start < 0 || end < 0 || start >= no_vertices || end >= no_vertices){
+            throw VerticesNotExists("Vertices should in between (1," + to_string(no_vertices) + ")");
+        }
+        if(v_list[start] == nullptr){
+            throw VerticesNotExists("Vertices : " + to_string(start) + " doesn't exists");
+        }
+        if(v_list[end] == nullptr){
+            throw VerticesNotExists("Vertices : " + to_string(end) + " doesn't exists");
+        }
+    }
+    void relax_edges(int *distance){
+        for (int j = 0; j < no_vertices; ++j) {
+            Vertices *node = v_list[j];
+            int from_ind = node->value;
+            for(Edge *ptr=node->edges;ptr!= nullptr;ptr=ptr->next){
+                int to_ind = ptr->to_node->value;
+                int wt = ptr->weight;
+                if(distance[to_ind] > distance[from_ind] + wt){
+                    distance[to_ind] = distance[from_ind] + wt;
+                }
+            }
+        }
+    }
+    static bool cycle_from_vertices(Vertices *V, bool *visited, bool *grey_set){
+        if(!visited[V->value]){
+            visited[V->value] = true;
+            grey_set[V->value] = true;
+            for(Edge *ptr=V->edges;ptr!=nullptr;ptr=ptr->next){
+                if((!visited[ptr->to_node->value] && cycle_from_vertices(ptr->to_node, visited, grey_set)) && grey_set[ptr->to_node->value])
+                    return true;
+            }
+        }
+        grey_set[V->value] = false;
+        return false;
+    }
+    static void mark_visited_reachable(Vertices *V, bool *visited){
+        visited[V->value] = true;
+        for(Edge *ptr=V->edges;ptr!= nullptr;ptr=ptr->next){
+            if(!visited[ptr->to_node->value])
+                mark_visited_reachable(ptr->to_node, visited);
+        }
+    }
 public:
-    explicit Graph(int n){
+    explicit DGraph(int n){
         if(n < 1){
             throw InvalidInput("No. of nodes must be more than 0");
         }
-        no_nodes = n;
+        no_vertices = n;
+        no_edges = 0;
+        curr_vertices = n;
         v_list = new Vertices*[n];
-        for (int i = 0; i < no_nodes; ++i) {
+        for (int i = 0; i < no_vertices; ++i) {
             v_list[i] = new Vertices(i);
         }
     }
     string print_vertices_list(){
         string result;
-        for (int i = 0; i < no_nodes; ++i) {
+        for (int i = 0; i < no_vertices; ++i) {
             if(v_list[i] != nullptr) {
                 result += to_string(v_list[i]->value) + " ";
             }
@@ -114,15 +171,7 @@ public:
         return result;
     }
     int get_weight(int start, int end){
-        if( start < 0 || end < 0 || start >= no_nodes || end >= no_nodes){
-            throw VerticesNotExists("Vertices should in between (1," + to_string(no_nodes) +")");
-        }
-        if(v_list[start] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(start)+" doesn't exists");
-        }
-        if(v_list[end] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(end)+" doesn't exists");
-        }
+        check_valid_vertices(start, end);
         int result=0;
         bool found = false;
         for(Edge *ptr=v_list[start]->edges;ptr!=nullptr;ptr=ptr->next){
@@ -138,26 +187,19 @@ public:
         return result;
     }
     void add_edge(int start, int end, int weight=1){
-        if( start < 0 || end < 0 || start >= no_nodes || end >= no_nodes){
-            throw VerticesNotExists("Vertices should in between (1," + to_string(no_nodes) +")");
-        }
-        if(v_list[start] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(start)+" doesn't exists");
-        }
-        if(v_list[end] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(end)+" doesn't exists");
-        }
+        check_valid_vertices(start, end);
         try{
             v_list[start]->edges = add_node_in_end(v_list[start]->edges, weight, v_list[end]);
+            no_edges++;
         }catch (EdgeAlreadyExists &E){
             string msg = "Edge (" + to_string(start) + "," + to_string(end) + ") Already Exists";
-            //throw EdgeAlreadyExists(msg);
-            cout<<msg<<endl;
+            throw EdgeAlreadyExists(msg);
+            //cout<<msg<<endl;
         }
     }
     string print_adjacency_list(){
         string result;
-        for (int i = 0; i < no_nodes; ++i) {
+        for (int i = 0; i < no_vertices; ++i) {
             if(v_list[i] != nullptr){
                 result += to_string(v_list[i]->value) + "-> ";
                 for(Edge *ptr=v_list[i]->edges;ptr != nullptr;ptr=ptr->next){
@@ -169,19 +211,12 @@ public:
         return result;
     }
     void delete_edge(int start, int end){
-        if( start < 0 || end < 0 || start >= no_nodes || end >= no_nodes){
-            throw VerticesNotExists("Vertices should in between (1," + to_string(no_nodes) + ")");
-        }
-        if(v_list[start] == nullptr){
-            throw VerticesNotExists("Vertices : " + to_string(start) + " doesn't exists");
-        }
-        if(v_list[end] == nullptr){
-            throw VerticesNotExists("Vertices : " + to_string(end) + " doesn't exists");
-        }
+        check_valid_vertices(start, end);
         Edge *head = v_list[start]->edges, *prev = head;
         if(head != nullptr && head->to_node->value == end){
             v_list[start]->edges = head->next;
             delete head;
+            no_edges--;
             return;
         }
         while (head != nullptr && head->to_node->value != end){
@@ -193,18 +228,13 @@ public:
         }
         prev->next = head->next;
         delete head;
+        no_edges--;
     }
     string BFS(int n){
-        if(n < 0 || n >= no_nodes){
-            string msg = "Vertices should between [0, "+to_string(no_nodes)+")";
-            throw InvalidInput(msg);
-        }
-        if(v_list[n] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(n)+" doesn't exists");
-        }
+        check_valid_vertices(n);
         string result;
-        bool *visited = new bool[no_nodes]();
-        //fill_n(visited, no_nodes, false);
+        bool *visited = new bool[no_vertices]();
+        //fill_n(visited, no_vertices, false);
         queue<Vertices*> Q;
         Q.push(v_list[n]);
         visited[v_list[n]->value] = true;
@@ -222,16 +252,10 @@ public:
         return result;
     }
     string DFS(int n){
-        if(n < 0 || n >= no_nodes){
-            string msg = "Vertices should between [0, "+to_string(no_nodes)+")";
-            throw InvalidInput(msg);
-        }
-        if(v_list[n] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(n)+" doesn't exists");
-        }
+        check_valid_vertices(n);
         string result;
-        bool *visited = new bool[no_nodes]();
-        //fill_n(visited, no_nodes, false);
+        bool *visited = new bool[no_vertices]();
+        //fill_n(visited, no_vertices, false);
         stack<Vertices*> Q;
         Q.push(v_list[n]);
         visited[v_list[n]->value] = true;
@@ -249,13 +273,8 @@ public:
         return result;
     }
     void delete_vertices(int n){
-        if( n < 0 || n >= no_nodes){
-            throw VerticesNotExists("Vertices should in between (1," + to_string(no_nodes) +")");
-        }
-        if(v_list[n] == nullptr){
-            throw VerticesNotExists("Vertices : "+to_string(n)+" doesn't exists");
-        }
-        for(int i=0;i<no_nodes;i++){
+        check_valid_vertices(n);
+        for(int i=0;i<no_vertices;i++){
             if(v_list[i] != nullptr){
                 try {
                     delete_edge(i, n);
@@ -265,21 +284,14 @@ public:
         delete_edge_list(v_list[n]->edges);
         delete v_list[n];
         v_list[n] = nullptr;
+        curr_vertices--;
     }
     int s_distance_dij(int start, int end){
-        if( start < 0 || end < 0 || start >= no_nodes || end >= no_nodes){
-            throw VerticesNotExists("Vertices should in between (1," + to_string(no_nodes) + ")");
-        }
-        if(v_list[start] == nullptr){
-            throw VerticesNotExists("Vertices : " + to_string(start) + " doesn't exists");
-        }
-        if(v_list[end] == nullptr){
-            throw VerticesNotExists("Vertices : " + to_string(end) + " doesn't exists");
-        }
+        check_valid_vertices(start, end);
         int infinity = INT32_MAX;
-        int *distance = new int[no_nodes];
-        bool *visited = new bool[no_nodes]();
-        fill_n(distance, no_nodes, infinity);
+        int *distance = new int[no_vertices];
+        bool *visited = new bool[no_vertices]();
+        fill_n(distance, no_vertices, infinity);
         distance[start] = 0;
         visited[start] = true;
         int pass = start;
@@ -293,7 +305,7 @@ public:
                     distance[to_in] = distance[from_in] + wt;
                 }
             }
-            pass = false_min_node(distance, visited, no_nodes);
+            pass = false_min_node(distance, visited, no_vertices);
             visited[pass] = true;
         }
         if(distance[end]==infinity){
@@ -301,11 +313,63 @@ public:
         }
         return distance[end];
     }
+    int s_distance_bell(int start, int end){
+        check_valid_vertices(start, end);
+        int infinity = INT32_MAX/2;
+        int *distance = new int[no_vertices];
+        fill_n(distance, no_vertices, infinity);
+        distance[start] = 0;
+        for (int i = 0; i < no_edges-1; ++i) {
+            relax_edges(distance);
+        }
+        int r1 = distance[end];
+        relax_edges(distance);
+        int r2 = distance[end];
+        if(r1 != r2){
+            throw NegativeWeightCycleExists("Negative Cycle Exists in any path between ("
+            +to_string(start)+","+to_string(end)+")");
+        }
+        if(distance[end]==infinity) {
+            throw PathNotFound("Path Not Exists between (" + to_string(start) + "," + to_string(end) + ")");
+        }else{
+            return distance[end];
+        }
+    }
+    int get_no_edges(){
+        return no_edges;
+    }
+    int get_no_vertices(){
+        return curr_vertices;
+    }
+    bool is_cyclic(){
+        bool *visited = new bool[no_edges]();
+        bool *grey_set = new bool[no_edges]();
+        for (int i = 0; i < no_vertices; ++i) {
+            if(v_list[i] != nullptr){
+                if(cycle_from_vertices(v_list[i], visited, grey_set)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    bool all_reachable_from(int n){
+        check_valid_vertices(n);
+        bool *visited = new bool[no_vertices];
+        Vertices *node = v_list[n];
+        mark_visited_reachable(node, visited);
+        for (int i = 0; i < no_vertices; ++i) {
+            if(!visited[i] and v_list[i]!= nullptr){
+                return false;
+            }
+        }
+        return true;
+    }
 };
 
 int main(){
     try {
-        Graph G = Graph(8);
+        DGraph G = DGraph(8);
         G.add_edge(0, 1, 1);
         G.add_edge(0, 2, 1);
         G.add_edge(0, 7, 20);
@@ -322,9 +386,10 @@ int main(){
         G.add_edge(6, 7, 2);
         G.add_edge(7, 3, 1);
         G.add_edge(7, 0, 3);
-        G.delete_vertices(5);
-        cout<<G.s_distance_dij(1, 7);
-    }catch (Graph::Error &E){
+        G.delete_vertices(7);
+        //G.delete_vertices(6);
+        cout<<G.all_reachable_from(0);
+    }catch (DGraph::Error &E){
         cout<<E.get_message()<<endl;
     }
 }
